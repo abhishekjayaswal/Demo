@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_of_cites">
+        <item>Chittorgarh</item>
+        <item>Pune</item>
+        <item>Bhilwara</item>
+        <item>Ajmer</item>
+        <item>Jaipur</item>
+        <item>Udaipur</item>
+    </array>
+</resources>

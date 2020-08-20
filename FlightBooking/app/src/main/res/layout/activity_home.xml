@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+            android:id="@+id/text_view_flight_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+           android:gravity="center"
+            android:text="@string/flight_search"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/sp_40"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:weightSum="30"
+        android:layout_marginLeft="@dimen/dp_20"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/dp_10">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/edit_text_search_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:prompt="@string/From"
+                android:entries="@array/list_of_cites"
+                android:gravity="center"
+                android:textColor="@color/colorDarkBlack"
+                android:textSize="@dimen/sp_30" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+          android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/ic_baseline_swap_horiz_24"
+            android:id="@+id/image_view_swap_horiz"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:layout_marginLeft="@dimen/dp_20"
+            >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/to"
+            android:id="@+id/edit_text_search_to"
+            android:textSize="@dimen/sp_30"
+            android:entries="@array/list_of_cites"
+            android:textColor="@color/colorDarkBlack"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/Departure_Date"
+        android:textColor="@color/colorDarkBlack"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:textSize="@dimen/sp_20"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_search_date"
+        android:textSize="@dimen/sp_20"
+        android:text="@string/select_date"
+        android:textColor="@color/colorDarkBlack"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/search_flights"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/colorBlue"
+        android:id="@+id/button_search_flights"
+        />
+
+</LinearLayout>
